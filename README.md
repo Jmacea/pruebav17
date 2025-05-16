@@ -7,7 +7,9 @@ Implementar un módulo Odoo para gestionar solicitudes de servicios técnicos co
 - 🔄 **API REST** (Bonus)
 
 Modulo:
+
 ![alt text](image.png)
+
 ---
 
 🚀 Funcionalidades Implementadas
@@ -61,6 +63,8 @@ Verificar integración POS
 Validar PDF y correo electrónico
 
 📬 Contacto
+
 ✉️ Email: jmacea.dev@gmail.com
+
 🔗 LinkedIn: [linkedin.com/in/tu-perfil](https://www.linkedin.com/in/jeison-macea-81345b224/)
 
