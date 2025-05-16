@@ -13,7 +13,5 @@
             <field name="paperformat_id" ref="requests_tecnical_services.paperformat_custom_report"/>
         </record>
         
-        
-    
     </data>
 </odoo>

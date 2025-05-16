@@ -1,0 +1,25 @@
+<odoo>
+   <data>
+       <record id="email_template_custom" model="mail.template">
+           <field name="name">Technical Service Request</field>
+           <field name="model_id" ref="requests_tecnical_services.model_technical_service_request"/>
+           <field name="auto_delete" eval="True"/>
+           <field name="email_from">{{object.res_user_id.email}}</field>
+           <field name="email_to">{{object.client_name.email}}</field>
+           <field name="subject">{{object.res_user_id.email}}</field>
+           <field name="body_html">
+               <p>
+                Dear<t t-out="object.client_name.name"/>,
+                   <br/>
+                   <br/>
+                   Good job, this is our first e-mail template!
+                   <br/>
+               </p>
+               Regards,
+               <br/>
+               <t t-out="object.company_id.name"/>
+           </field>
+            <field name="report_template_ids" eval="[(4, ref('requests_tecnical_services.report_technical_service_request_action'))]"/>
+       </record>
+   </data>
+</odoo>

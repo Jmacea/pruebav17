@@ -16,6 +16,7 @@
         "views/technical_service_request_views.xml",
         "views/request_form_templates.xml",
         "reports/action_report.xml",
+        "data/email_template.xml"
     ],
     "assets": {
         "web.assets_frontend": [

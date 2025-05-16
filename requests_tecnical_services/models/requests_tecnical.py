@@ -70,3 +70,7 @@ class TechnicalServiceRequest(models.Model):
         self.ensure_one()
         self.state = 'draft'
         self.date_completed = False
+        
+    def action_send_email(self):
+        mail_template = self.env.ref('requests_tecnical_services.email_template_custom')
+        mail_template.send_mail(self.id, force_send=True)

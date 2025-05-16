@@ -10,6 +10,7 @@
           <button name="action_cancel" type="object" string="Cancel" class="btn-secondary" invisible="state != 'done'" />
           <button name="action_reset_to_draft" type="object" string="Reset to Draft" class="btn-warning" invisible="state not in ['done', 'in_process', 'canceled']"/>
           <field name="state" widget="statusbar" statusbar_visible="draft,done,in_process" />
+          <button name="action_send_email" string="Send by email" type="object"/>
         </header>
         <sheet>
           
