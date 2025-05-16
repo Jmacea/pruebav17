@@ -74,3 +74,21 @@ class TechnicalServiceRequest(models.Model):
     def action_send_email(self):
         mail_template = self.env.ref('requests_tecnical_services.email_template_custom')
         mail_template.send_mail(self.id, force_send=True)
+        
+
+
+class ApiAuthToken(models.Model):
+    _name = 'api.auth.token'
+    _description = 'Tokens de API'
+
+    name = fields.Char(string='Nombre del Cliente', required=True)
+    token = fields.Char(string='Token', required=True, copy=False)
+    active = fields.Boolean(string='Activo', default=True)
+
+    _sql_constraints = [
+        ('token_unique', 'UNIQUE(token)', 'El token debe ser único.'),
+    ]
+
+    @api.model
+    def is_valid_token(self, token):
+        return bool(self.search([('token', '=', token), ('active', '=', True)]))
