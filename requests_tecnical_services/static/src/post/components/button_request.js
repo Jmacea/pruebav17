@@ -39,8 +39,7 @@ patch(CategorySelector.prototype, {
         const requests = await this.orm.searchRead(
             "technical.service.request",
             [
-                ["assigned_user_id", "=", users],
-                ["state", "!=", "done"],  
+                ["assigned_user_id", "=", users], 
             ],
             ["name", "equipment", "priority", "date_requested"]
         );

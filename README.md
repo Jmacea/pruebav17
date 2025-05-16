@@ -6,6 +6,8 @@ Implementar un módulo Odoo para gestionar solicitudes de servicios técnicos co
 - 📄 **Reportes**: PDF y emails automáticos  
 - 🔄 **API REST** (Bonus)
 
+Modulo:
+![alt text](image.png)
 ---
 
 🚀 Funcionalidades Implementadas
@@ -25,11 +27,16 @@ Ruta /request-service
 
 Validación JS + Controlador Python
 
+
+![alt text](image-1.png)
+
 🛒 Extensión POS:
 
 Botón "Ver Solicitudes"
 
 Popup con Owl.js
+
+![alt text](image-2.png)
 
 📄 Reportes:
 

@@ -12,7 +12,7 @@
             <h3 t-esc="props.title"/>
             <br/>
             <ul>
-                <t t-foreach="props.requests" t-as="request" t-key="request">
+                <t t-foreach="props.requests" t-as="request" t-key="request.id">
                     <li>
                         <span t-esc="request.name"/>
     -
