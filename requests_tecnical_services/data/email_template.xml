@@ -1,25 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-   <data>
-       <record id="email_template_custom" model="mail.template">
-           <field name="name">Technical Service Request</field>
-           <field name="model_id" ref="requests_tecnical_services.model_technical_service_request"/>
-           <field name="auto_delete" eval="True"/>
-           <field name="email_from">{{object.res_user_id.email}}</field>
-           <field name="email_to">{{object.client_name.email}}</field>
-           <field name="subject">{{object.res_user_id.email}}</field>
-           <field name="body_html">
-               <p>
-                Dear<t t-out="object.client_name.name"/>,
-                   <br/>
-                   <br/>
-                   Good job, this is our first e-mail template!
-                   <br/>
-               </p>
-               Regards,
-               <br/>
-               <t t-out="object.company_id.name"/>
-           </field>
+    <data noupdate="1">
+        <record id="email_template_tech_request" model="mail.template">
+            <field name="name">Notificación de Solicitud Técnica</field>
+            <field name="model_id" ref="requests_tecnical_services.model_technical_service_request"/>
+            <field name="subject">Solicitud {{ object.name }} - Estado: {{ object.state }}</field>
+            <field name="email_from">{{ object.assigned_user_id.email }}</field>
+            <field name="email_to">{{ object.customer_id.email }}</field>
+            <field name="body_html" type="html">
+                <div style="font-family: Arial, sans-serif; color: #333;">
+                    <h2 style="color: #875A7B;">Notificación de Solicitud Técnica</h2>
+                    <p>Hola <strong>{{ object.customer_id.name }}</strong>,
+                    </p>
+                    <p>El estado de tu solicitud <strong>{{ object.name }}</strong> ha sido actualizado a <strong>{{ object.state }}</strong>.
+                    </p>
+                    <p>Equipo: <strong>{{ object.equipment or 'No especificado' }}</strong>
+                    </p>
+                    <br/>
+                    <p>Gracias por confiar en nosotros.</p>
+                    <p style="color: #875A7B;">
+                        <em>Equipo de Soporte Técnico</em>
+                    </p>
+                </div>
+            </field>
             <field name="report_template_ids" eval="[(4, ref('requests_tecnical_services.report_technical_service_request_action'))]"/>
-       </record>
-   </data>
+
+        </record>
+
+
+    </data>
+
+
 </odoo>
