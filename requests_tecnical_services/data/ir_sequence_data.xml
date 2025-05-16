@@ -1,0 +1,13 @@
+<odoo>
+  <data noupdate="1">
+    <record id="seq_technical_service_request" model="ir.sequence">
+      <field name="name">Technical Service Request</field>
+      <field name="code">technical.service.request</field>
+      <field name="prefix">TSR-</field>
+      <field name="padding">5</field>
+      <field name="company_id" eval="False"/>
+    </record>
+  </data>
+
+  
+</odoo>

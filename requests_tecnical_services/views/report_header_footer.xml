@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_custom_header">
+        <div class="col-12 pb-2" style="border-bottom: 2px solid black;">
+            <h1 style="margin-top:22px; text-align: center; font-family: arial; font-size: 30pt;">Technical Service Request</h1>
+
+        </div>
+        
+    </template>
+
+    
+</odoo>

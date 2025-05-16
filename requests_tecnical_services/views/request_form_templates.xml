@@ -1,0 +1,95 @@
+<odoo>
+    <template id="template_request_form" name="Service Request Form">
+        <t t-call="website.layout">
+            <div class="container mt-4">
+                <h2>Request Technical Service</h2>
+                <form id="service-request-form" action="/request-service/submit" method="POST">
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                    <div class="form-group">
+                        <label for="customer_id">Customer</label>
+                        <select id="customer_id" class="form-control s_website_form_input" name="customer_id" required="">
+                            <option value="">Selecciona un cliente</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="equipment">Equipment</label>
+                         <input id="equipmentName" type="text" class="form-control s_website_form_input" name="equipment"  />
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="problem_description">Problem Description</label>
+                        <textarea name="problem_description" class="form-control s_website_form_input"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+                        <select name="priority" class="form-control s_website_form_input">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-2">Submit Request</button>
+                    <div id="error-messages" style="color: red;"></div>
+                    <span id="s_website_form_result"></span>
+                </form>
+            </div>
+
+            <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                // Cargar partners al iniciar
+                fetch('/get-partners')
+                    .then(response => response.json())
+                    .then(data => {
+                        const select = document.getElementById('customer_id');
+                        data.forEach(partner => {
+                            const option = document.createElement('option');
+                            option.value = partner.id;
+                            option.textContent = `${partner.name}`;
+                            select.appendChild(option);
+                        });
+                    })
+                    .catch(error => console.error('Error:', error));
+                 });
+
+                document.getElementById('service-request-form').addEventListener('submit', function(e) {
+                    e.preventDefault(); // Evita el envío directo
+                    const errorContainer = document.getElementById('error-messages');
+                    errorContainer.innerHTML = ''; // Limpia errores previos
+
+                    // Validaciones
+                    let isValid = true;
+                    const customerName = document.getElementById('customer_id').value.trim();
+                    const equipmentName = document.getElementById('equipmentName').value.trim();
+
+                    if (!customerName) { 
+                            isValid = false;
+                            errorContainer.innerHTML += '<p>debe llenar el campos customer</p>';
+                        }
+                     if (!equipmentName) { 
+                            isValid = false;
+                            errorContainer.innerHTML += '<p>debe llenar el campo equipment.</p>';
+                        }
+
+                    // Si todo es válido, envía el formulario
+                    if (isValid) {
+                        this.submit();
+                    }
+                });
+            </script>
+
+        </t>
+    </template>
+
+    <template id="template_request_thank_you" name="Thank You">
+        <t t-call="website.layout">
+            <div class="container mt-5">
+                <h2>Thank You!</h2>
+                <p>Your request has been submitted successfully.</p>
+            </div>
+        </t>
+    </template>
+</odoo>
