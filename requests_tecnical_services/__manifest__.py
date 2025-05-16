@@ -5,7 +5,7 @@
     "author": "Jmacea",
     "sequence": -100,
     "version": "17.0",
-    "depends": ["base", "web", "point_of_sale"],
+    "depends": ["base", "web", "point_of_sale", "mail", "contacts", "sale_management"],
     "data": [
         "security/security.xml",
         "security/ir.model.access.csv",

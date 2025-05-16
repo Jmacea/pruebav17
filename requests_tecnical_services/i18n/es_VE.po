@@ -1,0 +1,318 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* requests_tecnical_services
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-16 01:20+0000\n"
+"PO-Revision-Date: 2025-05-16 01:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: requests_tecnical_services
+#: model:ir.actions.report,print_report_name:requests_tecnical_services.report_technical_service_request_action
+msgid "'%s' % object.name"
+msgstr ""
+
+#. module: requests_tecnical_services
+#. odoo-javascript
+#: code:addons/requests_tecnical_services/static/src/post/components/button_request.xml:0
+#, python-format
+msgid "(Prioridad:"
+msgstr ""
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.template_request_form
+msgid ""
+"<select id=\"customer_id\" class=\"form-control s_website_form_input\" name=\"customer_id\" required=\"\">\n"
+"                            <option value=\"\">Selecciona un cliente</option>\n"
+"                        </select>"
+msgstr ""
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.template_request_form
+msgid ""
+"<select name=\"priority\" class=\"form-control s_website_form_input\">\n"
+"                            <option value=\"low\">Low</option>\n"
+"                            <option value=\"medium\">Medium</option>\n"
+"                            <option value=\"high\">High</option>\n"
+"                        </select>"
+msgstr ""
+
+#. module: requests_tecnical_services
+#. odoo-python
+#: code:addons/requests_tecnical_services/models/requests_tecnical.py:0
+#, python-format
+msgid "A technician must be assigned before completing the request."
+msgstr "Debe asignarse un técnico antes de completar la solicitud."
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.report_technical_service_request
+msgid "ASSIGNED USER"
+msgstr "USUARIO ASIGNADO"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__assigned_user_id
+msgid "Assigned Technician"
+msgstr "Técnico Asignado"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.report_technical_service_request
+msgid "CUSTOMER:"
+msgstr "CLIENTE"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.view_technical_service_request_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields.selection,name:requests_tecnical_services.selection__technical_service_request__state__canceled
+msgid "Canceled"
+msgstr "Cancelar"
+
+#. module: requests_tecnical_services
+#. odoo-javascript
+#: code:addons/requests_tecnical_services/static/src/post/components/button_request.xml:0
+#, python-format
+msgid "Cerrar"
+msgstr "Cerrar"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__customer_id
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.template_request_form
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.report_technical_service_request
+msgid "DATE COMPLETED"
+msgstr "FECHA DE FINALIZACIÓN"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.report_technical_service_request
+msgid "DATE REQUESTED"
+msgstr "FECHA DE SOLICITUD"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__date_completed
+msgid "Date Completed"
+msgstr "Fecha de finalización"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__date_requested
+msgid "Date Requested"
+msgstr "Fecha de solicitud "
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields.selection,name:requests_tecnical_services.selection__technical_service_request__state__done
+msgid "Done"
+msgstr "Hecho"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields.selection,name:requests_tecnical_services.selection__technical_service_request__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.report_technical_service_request
+msgid "EQUIPMENT"
+msgstr "EQUIPAMENTO"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__equipment
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.template_request_form
+msgid "Equipment"
+msgstr "Equipamento"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields.selection,name:requests_tecnical_services.selection__technical_service_request__priority__high
+msgid "High"
+msgstr "Alto"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__id
+msgid "ID"
+msgstr ""
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields.selection,name:requests_tecnical_services.selection__technical_service_request__state__in_process
+msgid "In Process"
+msgstr "En Proceso"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields.selection,name:requests_tecnical_services.selection__technical_service_request__priority__low
+msgid "Low"
+msgstr "Bajo"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.view_technical_service_request_form
+msgid "Mark as Done"
+msgstr "Marcar como hecho"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields.selection,name:requests_tecnical_services.selection__technical_service_request__priority__medium
+msgid "Medium"
+msgstr "Medio"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.report_technical_service_request
+msgid "NAME"
+msgstr "Name"
+
+#. module: requests_tecnical_services
+#. odoo-python
+#: code:addons/requests_tecnical_services/models/requests_tecnical.py:0
+#: code:addons/requests_tecnical_services/models/requests_tecnical.py:0
+#: code:addons/requests_tecnical_services/models/requests_tecnical.py:0
+#: code:addons/requests_tecnical_services/models/requests_tecnical.py:0
+#, python-format
+msgid "New"
+msgstr "Nuevo"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.report_technical_service_request
+msgid "PRIORITY"
+msgstr "PRIORIDAD"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__priority
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.template_request_form
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__problem_description
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.template_request_form
+msgid "Problem Description"
+msgstr "Descripción de problema"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__name
+msgid "Request Number"
+msgstr "Requiere numero"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.template_request_form
+msgid "Request Technical Service"
+msgstr ""
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.view_technical_service_request_form
+msgid "Reset to Draft"
+msgstr "Resetear a Borrador"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.report_technical_service_request
+msgid "STATE"
+msgstr "ESTADO"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.view_technical_service_request_form
+msgid "Send by email"
+msgstr "Enviar Correo"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.view_technical_service_request_form
+msgid "Service Request"
+msgstr "Respuesta de Servicio"
+
+#. module: requests_tecnical_services
+#: model:ir.actions.act_window,name:requests_tecnical_services.action_technical_service_request
+#: model:ir.ui.menu,name:requests_tecnical_services.menu_technical_service_request
+msgid "Service Requests"
+msgstr "Respuesta de Servicio"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.view_technical_service_request_form
+msgid "Start Process"
+msgstr "Comenzar Proceso"
+
+#. module: requests_tecnical_services
+#: model:ir.model.fields,field_description:requests_tecnical_services.field_technical_service_request__state
+msgid "State"
+msgstr "Estado"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.template_request_form
+msgid "Submit Request"
+msgstr "Enviar Respuesta"
+
+#. module: requests_tecnical_services
+#: model:ir.actions.report,name:requests_tecnical_services.report_technical_service_request_action
+#: model:ir.model,name:requests_tecnical_services.model_technical_service_request
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.report_custom_header
+msgid "Technical Service Request"
+msgstr "Solicitud de Servicio Técnico"
+
+#. module: requests_tecnical_services
+#: model:ir.ui.menu,name:requests_tecnical_services.menu_technical_root
+msgid "Technical Services"
+msgstr "Servicio Técnico"
+
+#. module: requests_tecnical_services
+#: model:res.groups,name:requests_tecnical_services.group_technical_user
+msgid "Technical User"
+msgstr "Usuario Técnico"
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.template_request_thank_you
+msgid "Thank You!"
+msgstr "Gracias"
+
+#. module: requests_tecnical_services
+#. odoo-python
+#: code:addons/requests_tecnical_services/models/requests_tecnical.py:0
+#, python-format
+msgid "The completion date must be after the requested date."
+msgstr "La fecha de finalización debe ser posterior a la fecha solicitada."
+
+#. module: requests_tecnical_services
+#. odoo-javascript
+#: code:addons/requests_tecnical_services/static/src/post/components/button_request.xml:0
+#, python-format
+msgid "Ver Solicitudes"
+msgstr ""
+
+#. module: requests_tecnical_services
+#. odoo-python
+#: code:addons/requests_tecnical_services/models/requests_tecnical.py:0
+#, python-format
+msgid "You cannot close a request without assigning a technician."
+msgstr "No se puede cerrar una solicitud sin asignar un técnico."
+
+#. module: requests_tecnical_services
+#: model_terms:ir.ui.view,arch_db:requests_tecnical_services.template_request_thank_you
+msgid "Your request has been submitted successfully."
+msgstr "Su solicitud se ha enviado correctamente."
